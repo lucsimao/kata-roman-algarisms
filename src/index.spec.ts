@@ -23,6 +23,14 @@ describe('Index Test', () => {
 
         expect(result).toBe('II');
       });
+
+      it('Should return III when number 3 is provided', () => {
+        const { sut } = makeSut();
+
+        const result = sut.convertDecimalToRoman(3);
+
+        expect(result).toBe('III');
+      });
     });
   });
 });
