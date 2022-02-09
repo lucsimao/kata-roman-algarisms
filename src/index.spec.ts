@@ -15,6 +15,14 @@ describe('Index Test', () => {
 
         expect(result).toBe('I');
       });
+
+      it('Should return II when number 2 is provided', () => {
+        const { sut } = makeSut();
+
+        const result = sut.convertDecimalToRoman(2);
+
+        expect(result).toBe('II');
+      });
     });
   });
 });
