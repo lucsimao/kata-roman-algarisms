@@ -1,6 +1,10 @@
 export class RomanNumeralsManager {
   public convertDecimalToRoman(number: number) {
-    if (number === 1) return 'I';
-    return 'II';
+    let result = '';
+    for (let i = 0; i < number; i++) {
+      result = result.concat('I');
+    }
+
+    return result;
   }
 }
