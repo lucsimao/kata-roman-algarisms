@@ -31,6 +31,14 @@ describe('Index Test', () => {
 
         expect(result).toBe('III');
       });
+
+      it('Should return IV when number 4 is provided', () => {
+        const { sut } = makeSut();
+
+        const result = sut.convertDecimalToRoman(4);
+
+        expect(result).toBe('IV');
+      });
     });
   });
 });
