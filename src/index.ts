@@ -1,5 +1,6 @@
 export class RomanNumeralsManager {
-  public convertDecimalToRoman(_number: number) {
-    return 'I';
+  public convertDecimalToRoman(number: number) {
+    if (number === 1) return 'I';
+    return 'II';
   }
 }
